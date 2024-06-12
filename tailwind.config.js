@@ -1,18 +1,72 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            backgroundImage: {
+                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+                "gradient-conic":
+                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+            colors: {
+                vector: {
+                    50: "#f6f6f6",
+                    100: "#e7e7e7",
+                    200: "#d1d1d1",
+                    300: "#b0b0b0",
+                    400: "#888888",
+                    500: "#6d6d6d",
+                    600: "#5d5d5d",
+                    700: "#4f4f4f",
+                    800: "#454545",
+                    900: "#404040",
+                    950: "#262626",
+                },
+                emerald: {
+                    50: "#eefff7",
+                    100: "#d7ffee",
+                    200: "#b2ffdf",
+                    300: "#63ffbf",
+                    400: "#33f5a6",
+                    500: "#09de88",
+                    600: "#01b86e",
+                    700: "#059059",
+                    800: "#0a7148",
+                    900: "#0a5d3e",
+                    950: "#003421",
+                },
+                amethyst: {
+                    50: "#f6f5fd",
+                    100: "#efedfa",
+                    200: "#e1ddf7",
+                    300: "#cac2f0",
+                    400: "#af9fe6",
+                    500: "#9377db",
+                    600: "#8863d0",
+                    700: "#7147ba",
+                    800: "#5e3b9c",
+                    900: "#4f3280",
+                    950: "#301f56",
+                },
+                ocean: {
+                    50: "#f3f6fc",
+                    100: "#e7eef7",
+                    200: "#c9d9ee",
+                    300: "#99bae0",
+                    400: "#6296ce",
+                    500: "#3e79b9",
+                    600: "#2d5e9c",
+                    700: "#264c7e",
+                    800: "#234269",
+                    900: "#223858",
+                    950: "#18273f",
+                },
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [],
 };
